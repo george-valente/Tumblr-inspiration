@@ -1,0 +1,451 @@
+*{
+    margin: 0; 
+    padding: 0; 
+}
+
+body{
+    background-color: #001935; 
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+}
+
+
+/* sidebar */
+.sidebar .logo{
+    display: flex; 
+    margin-left: 50px; 
+    margin-top: 0;  
+}
+.sidebar .logo img{
+    width: 140px; 
+    height: 90px; 
+}
+
+.sidebar{
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    bottom: 0; 
+    width: 300px;
+    border-right: 1px solid var(--border-color); 
+}
+
+.sidebar nav ul{
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 40px; 
+}
+
+.sidebar nav ul li{
+    display: flex; 
+    align-items: center;
+}
+
+.sidebar nav .fa{
+    padding-right: 8px;     
+}
+.sidebar nav ul li a{
+    text-decoration: none;
+    color: #939393; 
+}
+
+.sidebar__navigation-button{
+    display: flex; 
+    justify-content: center;
+    margin-top: 100px; 
+}
+
+.sidebar-button{
+    padding: 10px 45px 10px 45px;
+    width: 200px;  
+    border: transparent; 
+    text-decoration: none;
+    text-transform: none; 
+    cursor: pointer;
+    border-radius: 50px; 
+    background-color: #00B8FF;
+    font-weight: 600;
+    font-size: 15px; 
+}
+
+.sidebar .list-test{
+    display: flex; 
+    align-items: center;
+    padding: 10px;      
+}
+
+
+/* efeitos de hover - sidebar */
+.sidebar .list-test:hover{
+    background-color: #122943; 
+    cursor: pointer; 
+}
+
+
+/* conteúdo principal da página */
+.main-content{
+    max-width: 43vw;
+    height: 100vh; 
+    margin-left: 320px; 
+    padding-right: 10px;    
+    border-right: 1px solid var(--border-color); 
+}
+
+.main-content-header{
+    padding: 15px; 
+    display: flex; 
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border-color); 
+}
+
+.main-content .main-header__list-text{
+    display: flex; 
+}
+
+.main-header__list-icon{
+    cursor: pointer;
+    color: var(--font-default-color); 
+}
+
+
+.main-content .main-header__list-text a{
+    text-decoration: none; 
+    padding: 15px; 
+    color: var(--font-default-color); 
+}
+
+.main-post__category {
+    background-color: #fff;
+    border-radius: 20px; 
+    padding: 7px; 
+    margin-top: 10px; 
+}
+
+.main-post__category ul{
+    display: flex; 
+    justify-content: space-around;
+}
+
+.main-post__category ul li{
+    display: flex; 
+    flex-direction: column;
+}
+
+.main-post__category ul a{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    text-decoration: none; 
+    color: #000;  
+}
+
+.main-post__category .fa{
+    padding-bottom: 10px;                                                                        
+}
+
+.main-post__category .fa-camera{
+    color: #FF4930;                                                                         
+}
+.main-post__category .fa-quote-right{
+    color: #FF8A00;                                                                         
+}
+.main-post__category .fa-link{
+    color: #00CF35;                                                                         
+}
+.main-post__category .fa-comments{
+    color: #00B8FF;                                                                         
+}
+.main-post__category .fa-headphones{
+    color: #7C5CFF;                                                                         
+}
+.main-post__category .fa-video-camera{
+    color: #FF9DE0;                                                                         
+}
+
+
+
+/* fim do conteúdo principal */
+
+
+/* posts */
+.main-container__post{
+    margin-top: 15px; 
+    background-color: #F5F5F5;
+    border-radius: 20px;    
+}
+
+.main-container__post .profile-pic{
+    padding: 15px 15px 5px 15px; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #DEDEDE; 
+}
+
+.main-container__post .profile-pic .pfp-user{
+    display: flex; 
+    align-items: center;
+}
+
+.main-container__post .profile-pic img{
+    padding: 5px; 
+    width: 35px; 
+    height: 35px; 
+    border-radius: 15px;
+}
+.main-container__post .fa{
+    padding: 10px; 
+    color: #656565; 
+}
+.post-reblog{
+    padding: 15px 15px 5px 15px;
+}
+
+.post-reblog #paragraph-post{
+    padding: 15px;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.post-reblog img{
+    padding: 5px; 
+    width: 35px; 
+    height: 35px; 
+    border-radius: 15px; 
+}
+
+.reblog-pfp-user{
+    display: flex;
+    align-items:center;
+}
+
+.reblog-pfp-user a{
+    text-decoration: none;
+    color: var(--follow-color); 
+}
+#tumblr-check{
+    width: 15px;
+    height: 15px;
+}
+.reblog-pfp{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.author-reblog{
+    padding: 15px 15px 5px 15px; 
+}
+
+.author-reblog a{
+    text-decoration: underline;
+    color: #000;
+    font-weight: lighter;
+}
+
+.notes-icons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px; 
+    align-items: center;
+
+}
+
+
+.button-notes{
+    display: flex; 
+    align-items: center;
+    border: 1px solid #DEDEDE; 
+    border-radius: 20px; 
+    padding: 10px 15px 10px 15px;
+    cursor: pointer;
+}
+
+.post-icons ul{
+    display: flex; 
+}
+
+.post-icons .fa{
+    padding: 10px;
+    color: #595959; 
+}
+
+/* devido a estrutura do html de por os elementos em coluna, a segunda e terceira sessões estão dentro de uma div com display flex, para que fiquem lado a lado. */
+.scroll-page{
+    display: flex;   
+}
+
+
+/* hover página principal */
+.main-header__list a:hover{
+    background-color: #122943;
+    cursor: pointer;
+
+}
+
+.reblog-pfp-user a:hover{
+    text-decoration: underline;
+}
+
+.main-container__post .fa:hover{
+    background-color: #EBEBEB;
+    border-radius: 20px;  
+}
+
+.post-icons .fa:hover{
+    transform: scale(1.01);
+    color: #00CF5C;
+}
+
+.main-post__category .fa:hover{
+    transition: transform 0.3s ease;
+    transform: translateY(-5px);
+}
+
+
+
+/* início da terceira sessão */
+.search-bar-profiles{
+    width: 310px; 
+    height: 100vh; 
+    margin-top: 10px;
+    margin-left: 20px; 
+    
+    
+}
+
+.search-bar-profiles .profile-pics{
+    padding: 5px; 
+    width: 35px; 
+    height: 35px; 
+    border-radius: 15px;
+}
+
+.search-bar-profiles .search-bar{
+    display: flex; 
+    align-items: center;
+    padding: 5px; 
+    background-color: #405368;
+    border-radius: 5px; 
+}
+
+.search-bar-profiles .search-bar input{
+    padding: 10px; 
+    background: transparent; 
+    border: none; 
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap; 
+    outline: none; 
+    color: var(--font-default-color); 
+    font-weight: #6C88A4; 
+}
+
+.search-bar-profiles .search-bar img{
+    width: 20px; 
+    height: 20px;
+    padding: 5px; 
+    
+}
+
+.ad{
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 20px; 
+    padding: 10px; 
+    background-color: #000; 
+    color: #fff; 
+    font-weight: lighter;
+    font-size: .875rem; 
+     
+}
+
+.ad #ad-price{
+    color: #FF54A6;
+}
+
+.search-bar-profiles .profiles{ 
+    margin-top: 20px; 
+}
+
+.search-bar-profiles h2{
+    color: #fff; 
+    font-weight: 500; 
+    font-size: 1.3125rem; 
+    margin-bottom: 15px; 
+}
+
+.profiles-rec-container{
+    padding: 0px 10px 0px 0px;
+}
+
+
+.profiles-rec-container li{
+    padding: 10px 0px 15px 0px; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profiles .rec-pfp-bio a{
+    display: flex;
+    align-items: center;
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 14px;        
+}
+
+.profiles .rec-pfp-bio a .rec-bio{
+    color: var(--font-default-color); 
+    font-weight: lighter;       
+}
+
+
+.profiles .rec-user-bio{
+    display: flex;
+    flex-direction: column;
+}
+
+.profiles-rec-container .follow-remove a{
+    text-decoration: none; 
+    color: var(--follow-color); 
+    margin: 0px 15px 0px 0px;
+    font-size: 14px; 
+}
+
+.profiles-rec-container .follow-remove .fa{
+    color: var(--font-default-color); 
+    cursor: pointer; 
+}
+
+.search-bar-profiles .explore{
+    margin-top: 20px; 
+}
+
+.search-bar-profiles .explore a{
+    text-decoration: none; 
+    font-weight: 300; 
+    color: var(--follow-color); 
+}
+
+/* hover terceira sessão */
+
+.profiles-rec-container:hover{
+    background-color: #122943; 
+    cursor: pointer;
+}
+
+.profiles-rec-container .follow-remove a:hover{
+    text-decoration: underline;
+}
+
+.profiles-rec-container .follow-remove .fa:hover{
+    color: #fff;
+}
+
+.search-bar-profiles .explore a:hover{
+    text-decoration: underline;
+    
+}
