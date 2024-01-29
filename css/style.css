@@ -350,7 +350,7 @@ body{
     
 }
 
-.ad{
+#ad{
     display: flex; 
     justify-content: space-between;
     margin-top: 20px; 
@@ -359,12 +359,44 @@ body{
     color: #fff; 
     font-weight: lighter;
     font-size: .875rem; 
+    cursor: pointer;
      
 }
 
-.ad #ad-price{
+
+#ad #ad-price{
     color: #FF54A6;
 }
+
+#full-ad{
+    display: flex; 
+    justify-content: space-between; 
+    padding: 10px; 
+    background-color: #000; 
+    color: #fff; 
+    font-weight: lighter;
+    font-size: .875rem; 
+    cursor: pointer;
+    display: none;
+}
+
+#full-ad.active{
+    display: flex; 
+    justify-content: space-between; 
+    padding: 10px; 
+    background-color: #000; 
+    color: #fff; 
+    font-weight: lighter;
+    font-size: .875rem; 
+    cursor: pointer; 
+    border-right: 1px solid #FF54A6; 
+    border-bottom: 1px solid #FF54A6; 
+    border-left: 1px solid #FF54A6; 
+
+}
+
+
+
 
 .search-bar-profiles .profiles{ 
     margin-top: 20px; 
