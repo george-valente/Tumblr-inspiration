@@ -277,6 +277,54 @@ body{
     display: flex;   
 }
 
+/* teste - bloquear, seguir, denunciar */
+.box-copy-follow{
+    /* background-color: #fff;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 20px; 
+    padding: 15px;
+    margin-top: 150px;
+    margin-left: 400px; */
+    display: none;  
+
+}
+
+.box-copy-follow.active{
+    background-color: #fff;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 10px; 
+    padding: 15px;
+    margin-top: 210px;
+    margin-left: 380px; 
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  
+
+}
+
+.box-copy-follow button{
+    cursor: pointer;
+    border: transparent;
+    font-weight: 600; 
+    background-color: #fff;
+}
+
+.box-copy-follow a{
+    text-decoration: none; 
+    color: #FF4930; 
+}
+.box-copy-follow button, a{
+    font-size: 16px; 
+    padding: 10px;
+
+}
+
 
 /* hover página principal */
 .main-header__list a:hover{
@@ -394,8 +442,6 @@ body{
     border-left: 1px solid #FF54A6; 
 
 }
-
-
 
 
 .search-bar-profiles .profiles{ 
