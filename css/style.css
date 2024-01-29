@@ -430,14 +430,87 @@ body{
     color: var(--follow-color); 
 }
 
-/* hover terceira sessão */
+/* radar */
+.radar{
+    margin-top: 20px;
+}
 
+.post-container{
+    margin-top: 15px; 
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.post-container .radar-profile-pic{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-container .radar-profile-pic a{
+    margin-left: 5px;
+    text-decoration: none;
+    color: var(--follow-color); 
+}
+
+.post-container .radar-profile-pic .fa{
+    cursor: pointer; 
+}
+
+
+
+.post-container .radar-profile-pic .radar-pfp-user{
+    display: flex; 
+    align-items: center;
+    
+}
+
+.post-container .radar-profile-pic img{
+    padding: 5px; 
+    width: 35px; 
+    height: 35px; 
+    border-radius: 15px;
+}
+
+.radar-post img{
+    padding: 0px;
+    width: 100%;
+}
+
+.impulsionar{
+    margin-top: 20px;
+    color: #595959;
+    cursor: pointer;
+}
+
+.footer-links{
+    display: flex; 
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 3px 12px;
+    padding: 10px 0px 30px 0px;
+}
+
+.footer-links a{
+    padding: 5px;
+    font-size: 12.5px; 
+    text-decoration: none; 
+    color: #00B7FD; 
+    font-weight: 300;
+}
+
+
+
+
+
+/* hover terceira sessão */
 .profiles-rec-container:hover{
     background-color: #122943; 
     cursor: pointer;
 }
 
-.profiles-rec-container .follow-remove a:hover{
+.profiles-rec-container .follow-remove a:hover, .post-container .radar-profile-pic a:hover{
     text-decoration: underline;
 }
 
@@ -445,7 +518,7 @@ body{
     color: #fff;
 }
 
-.search-bar-profiles .explore a:hover{
+.search-bar-profiles .explore a:hover, .footer-links a:hover{
     text-decoration: underline;
     
 }
